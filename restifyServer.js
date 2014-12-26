@@ -19,8 +19,8 @@ function getMagnitudes(alof) {
 	return magnitudes;
 }
 
-//var test = [[1,2,3,4,5,6],[1,1,1,1,1,1],[0,0,0,1,1,1]];
-//console.log(getMagnitudes(test));
+var test = [[1,2,3,4,5,6,0,0,0],[1,1,1,1,1,1,0,0,0],[0,0,0,1,1,1,0,0,0]];
+console.log(getMagnitudes(test));
 
 function trim(alof){
 	var out = [];
@@ -237,7 +237,7 @@ console.log("purpose is %s",purpose);
 }
 
 server.post('/',respond);
-server.get('/',respond);
+//server.get('/',respond);
 
 server.listen(8080, function(){
 console.log('%s listening at %s',server.name, server.url);
